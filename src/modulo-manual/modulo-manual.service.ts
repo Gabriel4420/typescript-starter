@@ -1,11 +1,11 @@
-import { Injectable } from "@nestjs/common";
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class ModuloManualService {
-  getManual():string {
-    return 'Hello Manual'
+  getManual(): string {
+    return 'Hello Manual';
   }
-  getManual2():string{
-    return 'Hello Manual 2'
+  getManual2(): string {
+    return 'Hello Manual 2';
   }
 }

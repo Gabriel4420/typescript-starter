@@ -1,6 +1,6 @@
-import { Module } from "@nestjs/common";
-import { ModuloManualController } from "./modulo-manual.controller";
-import { ModuloManualService } from "./modulo-manual.service";
+import { Module } from '@nestjs/common';
+import { ModuloManualController } from './modulo-manual.controller';
+import { ModuloManualService } from './modulo-manual.service';
 
 @Module({
   imports: [],
@@ -8,6 +8,4 @@ import { ModuloManualService } from "./modulo-manual.service";
   providers: [ModuloManualService],
   exports: [],
 })
-
-
 export class ModuloManualModule {}
