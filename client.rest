@@ -1,0 +1,49 @@
+@baseUrl = http://localhost:3000
+
+### AppControllerGetHello
+
+# @name AppControllerGetHello
+GET {{baseUrl}}/application/home
+
+### Cria um Recado
+POST {{baseUrl}}/recados
+Content-Type: application/json
+
+{
+    "assunto": "Olá, mundo 2!",
+    "mensagem": "Bem-vindo ao meu aplicativo de recados 2!",
+    "de": "Maria",
+    "para": "João",
+    "lido": true,
+    "data": "2024-12-18T19:09:42.516Z"
+}
+
+### Lista Recados
+
+# @name RecadosControllerAll
+GET {{baseUrl}}/recados/all?limit=10
+
+### Lista um recado
+# @name RecadosControllerOne
+
+GET {{baseUrl}}/recados/2
+
+### Atualiza um recado
+
+PATCH {{baseUrl}}/recados/update/2
+Content-Type: application/json
+
+{
+  "assunto": "Olá, mundo 3!",
+  "mensagem": "Bem-vindo ao meu aplicativo de recados 2!",
+  "de": "João",
+  "para": "Maria",
+  "lido": true,
+  "data": "2024-12-18T19:09:42.516Z",
+  "atualizar":true
+}
+
+### Apaga um recado
+
+DELETE {{baseUrl}}/recados/delete/2
+
