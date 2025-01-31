@@ -10,12 +10,10 @@ POST {{baseUrl}}/recados
 Content-Type: application/json
 
 {
-    "assunto": "Olá, mundo 2!",
-    "mensagem": "Bem-vindo ao meu aplicativo de recados 2!",
-    "de": "Maria",
-    "para": "João",
-    "lido": true,
-    "data": "2024-12-18T19:09:42.516Z"
+    "assunto": "Olá, mundo 6!",
+    "mensagem": "Bem-vindo ao meu aplicativo de recados 6!",
+    "de": "M64ia",
+    "para": "Jeferson"
 }
 
 ### Lista Recados
@@ -26,7 +24,7 @@ GET {{baseUrl}}/recados/all?limit=10
 ### Lista um recado
 # @name RecadosControllerOne
 
-GET {{baseUrl}}/recados/2
+GET {{baseUrl}}/recados/3
 
 ### Atualiza um recado
 
@@ -34,16 +32,11 @@ PATCH {{baseUrl}}/recados/update/2
 Content-Type: application/json
 
 {
-  "assunto": "Olá, mundo 3!",
-  "mensagem": "Bem-vindo ao meu aplicativo de recados 2!",
-  "de": "João",
-  "para": "Maria",
-  "lido": true,
-  "data": "2024-12-18T19:09:42.516Z",
-  "atualizar":true
+  "assunto": "Olá Jeferson",
+  "bla bla bla":123
 }
 
 ### Apaga um recado
 
-DELETE {{baseUrl}}/recados/delete/2
+DELETE {{baseUrl}}/recados/delete/3
 
